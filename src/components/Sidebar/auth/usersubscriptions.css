@@ -1,0 +1,7 @@
+.user-suscriptions .cursor-pointer {
+  display: none;
+}
+
+.user-suscriptions:hover .cursor-pointer {
+  display: block;
+}
