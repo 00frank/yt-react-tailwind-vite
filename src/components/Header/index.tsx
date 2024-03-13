@@ -17,10 +17,8 @@ const Header = () => {
 
   const connectToServer = useCallback((user: LoggedUserType) => {
     if (!user) return;
-    console.log('user aqui: ', user);
     socket.connect();
     socket.emit('user.loggedin', user);
-    console.log("connected to ws");
   }, [user])
 
   useEffect(() => {
@@ -30,12 +28,10 @@ const Header = () => {
     const tryAutoLogin = async () => {
       try {
         const token = Cookies.get('token');
-        console.log('user:::::: ', user);
         if (!user || !token) {
           if (!token) return null;
           const { data: loadedUser } = await axios.get(import.meta.env.VITE_API_URL + '/auth/profile', { headers: { Authorization: `Bearer ${token}` }, signal });
           updateUser({ jwt: token, ...loadedUser });
-          console.log("auth loaded");
         }
       } catch (error) {
         console.log("no auth loaded");
@@ -54,7 +50,6 @@ const Header = () => {
     }
     return () => {
       if (!!user) {
-        console.log("disconnecting ws");
         socket.disconnect();
       }
     }
