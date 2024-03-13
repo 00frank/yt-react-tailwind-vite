@@ -8,22 +8,22 @@ const MobileFooter = () => {
   return (
     <section className="bg-zinc-900 h-16 w-full fixed flex justify-between px-4 pt-1 border-t border-zinc-500 bottom-0 md:hidden">
       <div className="flex flex-col w-[46px] items-center">
-        <HomeIcon size="32" />
+        <HomeIcon size="24" />
         <p className="text-xs text-white">
           Principal
         </p>
       </div>
       <div className="flex flex-col w-[46px] items-center">
-        <ShortsIcon size="32" />
+        <ShortsIcon size="24" />
         <p className="text-xs text-white">
           Shorts
         </p>
       </div>
       <div>
-        <PlusIcon size="40" />
+        <PlusIcon size="32" />
       </div>
       <div className="flex flex-col w-[46px] items-center">
-        <SubscriptionsIcon size="32" />
+        <SubscriptionsIcon size="24" />
         <p className="text-xs text-white">
           Suscripciones
         </p>
@@ -31,7 +31,7 @@ const MobileFooter = () => {
       <div className="flex flex-col w-[46px] items-center">
         {!!user?.avatar
           ? <img className="w-8 rounded-full" src={user.avatar} alt="user image" />
-          : <UnauthenticatedUserIcon fill="#fff" size="32" />}
+          : <UnauthenticatedUserIcon fill="#fff" size="24" />}
         <p className="text-xs text-white">
           Tú
         </p>
