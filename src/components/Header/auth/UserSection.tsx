@@ -15,7 +15,7 @@ const UserSection = () => {
         <BellIcon />
       </button>
       <button className="flex justify-center items-center ml-4 h-12 w-12 rounded-full">
-        {user.avatar && <img src={user.avatar} alt="avatar" className="w-8 h-8 rounded-full" />}
+        {user.avatar && <img src={user.avatar} alt="avatar" className="w-10 h-10 rounded-full" />}
         {!user.avatar && <User6Icon />}
       </button>
     </div>

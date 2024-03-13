@@ -1,6 +1,6 @@
-export function HomeIcon({ className = "" }) {
+export function HomeIcon({ className = "", size = "24" }) {
   return (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style={{ display: "block" }}>
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height={size} viewBox="0 0 24 24" width={size} focusable="false" style={{ display: "block" }}>
       <g fill="#fff">
         <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z">
         </path>
@@ -9,18 +9,18 @@ export function HomeIcon({ className = "" }) {
   )
 }
 
-export function ShortsIcon({ className = "" }) {
+export function ShortsIcon({ className = "", size = "24" }) {
   return (
-    <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style={{ display: "block" }}>
+    <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" height={size} viewBox="0 0 24 24" width={size} focusable="false" style={{ display: "block" }}>
       <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
       </path>
     </svg>
   )
 }
 
-export function SubscriptionsIcon({ className = "" }) {
+export function SubscriptionsIcon({ className = "", size = "24" }) {
   return (
-    <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style={{ display: "block" }}>
+    <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height={size} viewBox="0 0 24 24" width={size} focusable="false" style={{ display: "block" }}>
       <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z" >
       </path >
     </svg >
@@ -87,6 +87,14 @@ export function ShowMoreIcon({ className = "" }) {
     <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style={{ display: "block" }}>
       <path d="m18 9.28-6.35 6.35-6.37-6.35.72-.71 5.64 5.65 5.65-5.65z">
       </path>
+    </svg>
+  )
+}
+
+export function PlusIcon({ className = "", size = "24" }) {
+  return (
+    <svg className={className} fill="#fff" xmlns="http://www.w3.org/2000/svg" height={size} viewBox="0 0 50 50" width={size} focusable="false" style={{ display: "block" }}>
+      <path d="M 25 2 C 12.264481 2 2 12.264481 2 25 C 2 37.735519 12.264481 48 25 48 C 37.735519 48 48 37.735519 48 25 C 48 12.264481 37.735519 2 25 2 z M 25 4 C 36.664481 4 46 13.335519 46 25 C 46 36.664481 36.664481 46 25 46 C 13.335519 46 4 36.664481 4 25 C 4 13.335519 13.335519 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z" />
     </svg>
   )
 }
