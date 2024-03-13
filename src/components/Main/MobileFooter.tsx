@@ -1,4 +1,4 @@
-import { HomeIcon, PlusIcon, ShortsIcon, SubscriptionsIcon } from "@components/Icons";
+import { HomeIcon, PlusIcon, ShortsIcon, SubscriptionsIcon, UnauthenticatedUserIcon } from "@components/Icons";
 import { UserContext } from "@context/user";
 import { LoggedUserType } from "@types";
 import { useContext } from "react";
@@ -29,7 +29,9 @@ const MobileFooter = () => {
         </p>
       </div>
       <div className="flex flex-col w-[46px] items-center">
-        <img className="w-8 rounded-full" src={user.avatar} alt="user image" />
+        {!!user?.avatar
+          ? <img className="w-8 rounded-full" src={user.avatar} alt="user image" />
+          : <UnauthenticatedUserIcon fill="#fff" size="32" />}
         <p className="text-xs text-white">
           Tú
         </p>
