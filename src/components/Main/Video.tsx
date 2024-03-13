@@ -35,13 +35,13 @@ const Video = ({ data }: { data: VideoType }) => {
         <div className="absolute px-1 bottom-2 right-2 rounded-md bg-[#252525]/80 md:bg-black text-white">{getVideoDurationString()}</div>
       </div>
       <div className="video_info flex flex-row">
-        <div className="video_user-image bg-[#252525] w-12 h-12 rounded-full mt-4">
+        <div className="video_user-image relative left-2 md:static bg-[#252525] w-12 h-12 rounded-full mt-4">
           <img
             className="w-12 h-12 rounded-full"
             src={data.author.avatar}
             alt='author image' />
         </div>
-        <div className="video_data-container mt-4 ml-4 w-5/6">
+        <div className="video_data-container mt-4 pl-6 w-5/6">
           <div className="video_title text-lg text-white font-semibold min-h-6 leading-[2.2rem]">
             {data.name}
           </div>
