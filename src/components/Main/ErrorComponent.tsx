@@ -17,7 +17,7 @@ const ErrorComponent = ({ error }: { error: any }) => {
 
   if (error.code === "ERR_NETWORK")
     return (
-      <div className="w-full h-96 pt-16">
+      <div className="w-full pt-16">
         <div className="w-full h-48">
           <OfflineIcon />
         </div>
