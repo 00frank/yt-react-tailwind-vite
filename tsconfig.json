@@ -4,6 +4,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@context/*": ["context/*"],
+      "@assets/*": ["assets/*"],
       "@utils": ["utils/index.ts"],
       "@types": ["types/types.d.ts"],
       "@socket": ["socket/socket.ts"],
