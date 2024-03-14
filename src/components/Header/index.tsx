@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-zinc-900 text-white hidden md:flex w-full h-20 overflow-hidden outline-none">
-        <div className="basis-1/4" />
+        <div className="basis-1/3 lg:basis-1/4" />
         <Searchbar />
         {!user && <Login />}
         {!!user && <UserSection />}

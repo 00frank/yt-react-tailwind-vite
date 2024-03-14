@@ -31,7 +31,7 @@ const Login = () => {
   }
 
   return (
-    <div className="flex justify-end basis-1/4 pt-3 pr-9">
+    <div className="flex justify-end basis-1/3 lg:basis-1/4 pt-3 pr-9">
       <button
         onClick={handleClick}
         className="border-zinc-700 hover:bg-[#263850] border rounded-3xl flex flex-row justify-center items-center px-4 h-12">

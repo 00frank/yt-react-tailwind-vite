@@ -7,7 +7,7 @@ import { User6Icon } from "@components/Icons/Users";
 const UserSection = () => {
   const user = useContext(UserContext).user;
   return (
-    <div className="flex justify-end basis-1/4 pt-3 pr-10">
+    <div className="flex justify-end basis-1/3 lg:basis-1/4 pt-3 pr-10">
       <button className="hover:bg-zinc-800 flex justify-center items-center ml-4 h-12 w-12 rounded-full">
         <CameraIcon />
       </button>

@@ -2,8 +2,8 @@ import { MicrophoneIcon, SearchIcon } from "@components/Icons"
 
 const Searchbar = () => {
   return (
-    <div className="flex basis-2/4 pl-20 pt-3">
-      <div className="h-12 w-[668px] flex overflow-hidden border border-zinc-700 focus-within:border-sky-800 rounded-[40px] rounded-e-none">
+    <div className="flex basis-1/3 lg:basis-2/4 ml-20 pt-3">
+      <div className="h-12 max-w-[668px] flex-1 flex overflow-hidden border border-zinc-700 focus-within:border-sky-800 rounded-[40px] rounded-e-none">
         <input
           className="bg-zinc-900 w-full text-white pl-4"
           type="text"
