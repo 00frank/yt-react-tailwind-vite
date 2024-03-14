@@ -1,5 +1,4 @@
 import { useCallback, useContext, useEffect, useState } from "react";
-// import { useSocketIO } from "react-use-websocket";
 
 import { User1Icon, User2Icon, User3Icon, User4Icon, User5Icon, User6Icon } from "@components/Icons/Users"
 import { UserContext } from "@context/user";
